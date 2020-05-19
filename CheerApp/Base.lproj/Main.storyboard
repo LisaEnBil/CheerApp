@@ -25,6 +25,7 @@
                                 </state>
                                 <connections>
                                     <action selector="chooseCat" destination="BYZ-38-t0r" eventType="touchUpInside" id="4vh-CT-h7s"/>
+                                    <segue destination="okh-1q-vNb" kind="show" id="EZw-57-B5o"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,6 +39,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tDJ-0q-3bS">
+            <objects>
+                <viewController id="okh-1q-vNb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZS7-Rt-wx0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="X8h-04-3hY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xGj-le-ZfH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gtp-gs-uah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1877" y="115"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lGO-qu-Gog">
