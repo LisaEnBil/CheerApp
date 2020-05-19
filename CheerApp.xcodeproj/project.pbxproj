@@ -13,6 +13,9 @@
 		4251773B2473C9210089DA3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425177392473C9210089DA3C /* Main.storyboard */; };
 		4251773D2473C9220089DA3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4251773C2473C9220089DA3C /* Assets.xcassets */; };
 		425177402473C9220089DA3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4251773E2473C9220089DA3C /* LaunchScreen.storyboard */; };
+		425177482473CED20089DA3C /* CheerAppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425177472473CED20089DA3C /* CheerAppController.swift */; };
+		425177552473E28B0089DA3C /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425177542473E28B0089DA3C /* image.xcassets */; };
+		425177592473E3960089DA3C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425177582473E3960089DA3C /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		4251773C2473C9220089DA3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4251773F2473C9220089DA3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		425177412473C9220089DA3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		425177472473CED20089DA3C /* CheerAppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerAppController.swift; sourceTree = "<group>"; };
+		425177542473E28B0089DA3C /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		425177582473E3960089DA3C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				4251773C2473C9220089DA3C /* Assets.xcassets */,
 				4251773E2473C9220089DA3C /* LaunchScreen.storyboard */,
 				425177412473C9220089DA3C /* Info.plist */,
+				425177472473CED20089DA3C /* CheerAppController.swift */,
+				425177542473E28B0089DA3C /* image.xcassets */,
+				425177582473E3960089DA3C /* Media.xcassets */,
 			);
 			path = CheerApp;
 			sourceTree = "<group>";
@@ -126,7 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				425177402473C9220089DA3C /* LaunchScreen.storyboard in Resources */,
+				425177592473E3960089DA3C /* Media.xcassets in Resources */,
 				4251773D2473C9220089DA3C /* Assets.xcassets in Resources */,
+				425177552473E28B0089DA3C /* image.xcassets in Resources */,
 				4251773B2473C9210089DA3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +152,7 @@
 				425177382473C9210089DA3C /* ViewController.swift in Sources */,
 				425177342473C9210089DA3C /* AppDelegate.swift in Sources */,
 				425177362473C9210089DA3C /* SceneDelegate.swift in Sources */,
+				425177482473CED20089DA3C /* CheerAppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
