@@ -13,6 +13,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     let context = CIContext()
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var catView: UIImageView!
     
     @IBAction func chooseCatButton() {
         
@@ -21,14 +22,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
    
     override func viewDidLoad() {
         super.viewDidLoad ()
-     
+        catView.layer.cornerRadius = 20
+        imageView.layer.cornerRadius = 20
     }
     
     @IBAction func tappedImage(sender: UITapGestureRecognizer) {
         
         if sender.view == imageView {
-            print("Its hthe same")
+            print("image view")
         }
+        else if sender.view == catView {
+            print("cat view")
+        }
+      
     }
 
 }

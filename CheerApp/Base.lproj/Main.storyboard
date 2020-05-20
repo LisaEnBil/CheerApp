@@ -73,7 +73,8 @@
                     <navigationItem key="navigationItem" title="CheerApp" id="ua5-Xn-J4M"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="imageView" destination="2a1-8T-MhI" id="sCo-tG-LbJ"/>
+                        <outlet property="catView" destination="amp-3f-ONy" id="5bH-XZ-1zH"/>
+                        <outlet property="imageView" destination="2a1-8T-MhI" id="xjx-Fn-BWG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
