@@ -15,7 +15,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func chooseCat() {
         let catImage = UIImagePickerController()
-        catImage.delegate = self
+        
     }
 
 }
