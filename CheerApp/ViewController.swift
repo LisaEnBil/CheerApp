@@ -8,14 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
 
     let context = CIContext()
-    @IBOutlet var imageView: UIImageView!
     
-    @IBAction func chooseCat() {
-        let catImage = UIImagePickerController()
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBAction func chooseCatButton() {
         
+        print("inside choosecatbutton")
+    }
+   
+    override func viewDidLoad() {
+        super.viewDidLoad ()
+     
+    }
+    
+    @IBAction func tappedImage(sender: UITapGestureRecognizer) {
+        
+        if sender.view == imageView {
+            print("Its hthe same")
+        }
     }
 
 }
