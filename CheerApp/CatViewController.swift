@@ -12,11 +12,17 @@ class CatViewController: UIViewController {
 
     @IBOutlet weak var catImageView: UIImageView!
     
-    var cat = "Torsken"
+    var cat = "torsken"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if cat == "torsken" {
+            catImageView.image = UIImage(named: "torsken1")
+        }
+        else if cat == "livli" {
+             catImageView.image = UIImage(named: "livli")
+        }
        
     }
 }
