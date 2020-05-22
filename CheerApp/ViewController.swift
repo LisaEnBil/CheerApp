@@ -17,22 +17,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func chooseCatButton() {
         
-        print("inside choosecatbutton")
+        
     }
    
     override func viewDidLoad() {
         super.viewDidLoad ()
-        catView.layer.cornerRadius = 20
-        imageView.layer.cornerRadius = 20
+      
     }
     
     @IBAction func tappedImage(sender: UITapGestureRecognizer) {
         
         if sender.view == imageView {
-            print("image view")
+            
         }
         else if sender.view == catView {
-            print("cat view")
+            
         }
       
     }
