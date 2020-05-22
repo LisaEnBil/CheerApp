@@ -12,16 +12,8 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
 
     let context = CIContext()
   
-  
-    @IBOutlet weak var imageView: UIImageView!
-    var newImage: UIImage!
     
-    @IBAction func chooseCatButton() {
-        
-        
-  
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad ()
       
@@ -29,8 +21,20 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        var torsken = 
+        let catController = segue.destination as! CatViewController
+        
+        catController.cat = "torsken"
+        
+        if segue.identifier == "livli" {
+            catController.cat = "livli"
+        }
+        else {
+            catController.cat = "torsken"
+        }
+        
+        
     }
+    
     
 
 

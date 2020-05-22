@@ -10,7 +10,7 @@
         <!--CheerApp-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CheerApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CatChooserController" customModule="CheerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,8 +38,7 @@
                                 </accessibility>
                                 <state key="normal" backgroundImage="torsken1"/>
                                 <connections>
-                                    <action selector="chooseCatButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="C2k-WP-dkA"/>
-                                    <segue destination="okh-1q-vNb" kind="show" id="wif-Lh-XOA"/>
+                                    <segue destination="okh-1q-vNb" kind="show" identifier="torsken" id="wif-Lh-XOA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCY-or-um0">
@@ -47,8 +46,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="livli"/>
                                 <connections>
-                                    <action selector="chooseCatButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNI-Fa-oPi"/>
-                                    <segue destination="okh-1q-vNb" kind="show" id="GDS-4w-wSM"/>
+                                    <segue destination="okh-1q-vNb" kind="show" identifier="livli" id="ac4-qy-FPw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Cat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brF-xh-3QA">
@@ -67,29 +65,19 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="8wa-jU-Bar">
-                    <connections>
-                        <action selector="tappedImageWithSender:" destination="BYZ-38-t0r" id="cfG-BA-0zq"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="aU2-HK-75w">
-                    <connections>
-                        <action selector="tappedImageWithSender:" destination="BYZ-38-t0r" id="alE-rg-cq8"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--Cat View Controller-->
         <scene sceneID="tDJ-0q-3bS">
             <objects>
-                <viewController id="okh-1q-vNb" sceneMemberID="viewController">
+                <viewController id="okh-1q-vNb" customClass="CatViewController" customModule="CheerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZS7-Rt-wx0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="torsken1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ehk-1w-SWN">
-                                <rect key="frame" x="20" y="207" width="374" height="408"/>
+                                <rect key="frame" x="20" y="230" width="374" height="408"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES" playsSound="YES"/>
@@ -101,7 +89,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="xGj-le-ZfH"/>
                     <connections>
-                        <outlet property="view" destination="Ehk-1w-SWN" id="LSD-lq-iD4"/>
+                        <outlet property="catImageView" destination="Ehk-1w-SWN" id="Une-xC-KQV"/>
+                        <outlet property="view" destination="Ehk-1w-SWN" id="mkg-Rh-U6i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gtp-gs-uah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -128,7 +117,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wif-Lh-XOA"/>
+        <segue reference="ac4-qy-FPw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="livli" width="501" height="230"/>
