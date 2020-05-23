@@ -81,6 +81,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES" playsSound="YES"/>
+                                    <bool key="isElement" value="NO"/>
                                 </accessibility>
                             </imageView>
                         </subviews>

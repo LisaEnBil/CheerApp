@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		422D09242477D51C00F77982 /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D09232477D51C00F77982 /* CatViewController.swift */; };
+		422D09282479047100F77982 /* 0981.wav in Resources */ = {isa = PBXBuildFile; fileRef = 422D09272479047100F77982 /* 0981.wav */; };
+		422D092A2479047900F77982 /* 1010.wav in Resources */ = {isa = PBXBuildFile; fileRef = 422D09292479047900F77982 /* 1010.wav */; };
 		425177342473C9210089DA3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425177332473C9210089DA3C /* AppDelegate.swift */; };
 		425177362473C9210089DA3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425177352473C9210089DA3C /* SceneDelegate.swift */; };
 		425177382473C9210089DA3C /* CatChooserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425177372473C9210089DA3C /* CatChooserController.swift */; };
@@ -15,11 +17,13 @@
 		4251773D2473C9220089DA3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4251773C2473C9220089DA3C /* Assets.xcassets */; };
 		425177402473C9220089DA3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4251773E2473C9220089DA3C /* LaunchScreen.storyboard */; };
 		425177552473E28B0089DA3C /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425177542473E28B0089DA3C /* image.xcassets */; };
-		425177592473E3960089DA3C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425177582473E3960089DA3C /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		422D09232477D51C00F77982 /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
+		422D09272479047100F77982 /* 0981.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0981.wav; sourceTree = "<group>"; };
+		422D09292479047900F77982 /* 1010.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1010.wav; sourceTree = "<group>"; };
+		422D092C2479096D00F77982 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		425177302473C9210089DA3C /* CheerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		425177332473C9210089DA3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		425177352473C9210089DA3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +33,6 @@
 		4251773F2473C9220089DA3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		425177412473C9220089DA3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		425177542473E28B0089DA3C /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
-		425177582473E3960089DA3C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,11 +46,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		422D092B2479096D00F77982 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				422D092C2479096D00F77982 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		425177272473C9210089DA3C = {
 			isa = PBXGroup;
 			children = (
 				425177322473C9210089DA3C /* CheerApp */,
 				425177312473C9210089DA3C /* Products */,
+				422D092B2479096D00F77982 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +80,10 @@
 				425177392473C9210089DA3C /* Main.storyboard */,
 				4251773C2473C9220089DA3C /* Assets.xcassets */,
 				4251773E2473C9220089DA3C /* LaunchScreen.storyboard */,
+				422D09272479047100F77982 /* 0981.wav */,
+				422D09292479047900F77982 /* 1010.wav */,
 				425177412473C9220089DA3C /* Info.plist */,
 				425177542473E28B0089DA3C /* image.xcassets */,
-				425177582473E3960089DA3C /* Media.xcassets */,
 				422D09232477D51C00F77982 /* CatViewController.swift */,
 			);
 			path = CheerApp;
@@ -135,9 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				425177402473C9220089DA3C /* LaunchScreen.storyboard in Resources */,
-				425177592473E3960089DA3C /* Media.xcassets in Resources */,
 				4251773D2473C9220089DA3C /* Assets.xcassets in Resources */,
 				425177552473E28B0089DA3C /* image.xcassets in Resources */,
+				422D092A2479047900F77982 /* 1010.wav in Resources */,
+				422D09282479047100F77982 /* 0981.wav in Resources */,
 				4251773B2473C9210089DA3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
