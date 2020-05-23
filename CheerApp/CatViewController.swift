@@ -58,7 +58,19 @@ class CatViewController: UIViewController {
             catImageView.image = UIImage(named: "livli")
             prepareForSound(purrFile: "1010")
         }
-        audioPlayer.play()
-       
+        
     }
+    @IBAction func purr() {
+        
+        if !audioPlayer.isPlaying {
+            audioPlayer.play()
+        }
+    }
+    @IBAction func stopPurring() {
+        if audioPlayer.isPlaying {
+            audioPlayer.pause()
+        }
+    }
+ 
+    
 }
