@@ -34,12 +34,10 @@ class CatViewController: UIViewController {
         }
     }
 
-    
     override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
         return .landscapeRight
     }
  
-    
     @IBOutlet weak var catImageView: UIImageView!
     
     var cat = "torsken"
@@ -65,12 +63,16 @@ class CatViewController: UIViewController {
         if !audioPlayer.isPlaying {
             audioPlayer.play()
         }
+        func hide() {
+            petCatLabel.isHidden = true
+        }
+        hide()
     }
     @IBAction func stopPurring() {
         if audioPlayer.isPlaying {
             audioPlayer.pause()
         }
     }
- 
-    
+    @IBOutlet weak var petCatLabel: UILabel!
+  
 }

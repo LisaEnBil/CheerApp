@@ -9,16 +9,12 @@
 import UIKit
 
 class CatChooserController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
-
-    let context = CIContext()
   
-    
-
     override func viewDidLoad() {
         super.viewDidLoad ()
+       
       
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let catController = segue.destination as! CatViewController
@@ -31,13 +27,7 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
         else {
             catController.cat = "torsken"
         }
-        
-        
     }
-    
-    
-
-
 }
 
 

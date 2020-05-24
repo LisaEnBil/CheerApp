@@ -15,50 +15,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Liebling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jew-o3-FfI">
-                                <rect key="frame" x="20" y="217" width="374" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Torsken" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWW-cx-BPH">
-                                <rect key="frame" x="20" y="509" width="374" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="-1" height="-1"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9y-FU-xA7">
-                                <rect key="frame" x="53" y="572" width="309" height="196"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                </accessibility>
-                                <state key="normal" backgroundImage="torsken1"/>
-                                <connections>
-                                    <segue destination="okh-1q-vNb" kind="show" identifier="torsken" id="wif-Lh-XOA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCY-or-um0">
-                                <rect key="frame" x="31" y="285" width="363" height="153"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="livli"/>
-                                <connections>
-                                    <segue destination="okh-1q-vNb" kind="show" identifier="livli" id="ac4-qy-FPw"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Cat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brF-xh-3QA">
-                                <rect key="frame" x="0.0" y="88" width="414" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Cat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brF-xh-3QA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="43"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="1" green="0.57684861730000003" blue="0.64454441770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="4Ab-MZ-dfV">
+                                <rect key="frame" x="10" y="131" width="394" height="682"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sl8-Fu-RlF">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="285"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liebling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jew-o3-FfI">
+                                                <rect key="frame" x="0.0" y="30" width="394" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                <color key="textColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="livli" translatesAutoresizingMaskIntoConstraints="NO" id="fdI-Ow-uzh">
+                                                <rect key="frame" x="0.0" y="65" width="394" height="220"/>
+                                            </imageView>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCY-or-um0" customClass="PictureButtons" customModule="CheerApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="65" width="394" height="220"/>
+                                                <connections>
+                                                    <segue destination="okh-1q-vNb" kind="show" identifier="livli" id="ac4-qy-FPw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="fdI-Ow-uzh" firstAttribute="leading" secondItem="Sl8-Fu-RlF" secondAttribute="leading" id="4eG-yx-7Pt"/>
+                                            <constraint firstItem="fdI-Ow-uzh" firstAttribute="top" secondItem="Jew-o3-FfI" secondAttribute="bottom" id="FiF-wx-Wme"/>
+                                            <constraint firstItem="aCY-or-um0" firstAttribute="top" secondItem="Jew-o3-FfI" secondAttribute="bottom" id="GPd-j2-C98"/>
+                                            <constraint firstAttribute="trailing" secondItem="fdI-Ow-uzh" secondAttribute="trailing" id="Hkv-qy-LIq"/>
+                                            <constraint firstItem="Jew-o3-FfI" firstAttribute="top" secondItem="Sl8-Fu-RlF" secondAttribute="top" constant="30" id="MRc-Fw-p2o"/>
+                                            <constraint firstAttribute="bottom" secondItem="aCY-or-um0" secondAttribute="bottom" id="PE9-yo-qzN"/>
+                                            <constraint firstAttribute="trailing" secondItem="aCY-or-um0" secondAttribute="trailing" id="VRk-H3-E0p"/>
+                                            <constraint firstItem="aCY-or-um0" firstAttribute="leading" secondItem="Sl8-Fu-RlF" secondAttribute="leading" id="Vjf-HN-27k"/>
+                                            <constraint firstAttribute="bottom" secondItem="fdI-Ow-uzh" secondAttribute="bottom" id="YL9-rJ-E0N"/>
+                                            <constraint firstItem="Jew-o3-FfI" firstAttribute="leading" secondItem="Sl8-Fu-RlF" secondAttribute="leading" id="mL4-LH-dfY"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jew-o3-FfI" secondAttribute="trailing" id="n6h-QX-29w"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTa-fn-9NP">
+                                        <rect key="frame" x="0.0" y="285" width="394" height="397"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Torsken" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWW-cx-BPH">
+                                                <rect key="frame" x="0.0" y="50" width="394" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                <color key="textColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="-1" height="-1"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="torsken1" translatesAutoresizingMaskIntoConstraints="NO" id="5L5-N1-KUd">
+                                                <rect key="frame" x="0.0" y="85" width="394" height="312"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9y-FU-xA7" customClass="PictureButtons" customModule="CheerApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="85" width="394" height="312"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                </accessibility>
+                                                <connections>
+                                                    <segue destination="okh-1q-vNb" kind="show" identifier="torsken" id="wif-Lh-XOA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="NWW-cx-BPH" firstAttribute="leading" secondItem="ZTa-fn-9NP" secondAttribute="leading" id="9a3-xe-SCg"/>
+                                            <constraint firstAttribute="trailing" secondItem="NWW-cx-BPH" secondAttribute="trailing" id="E6S-v3-ZL0"/>
+                                            <constraint firstItem="NWW-cx-BPH" firstAttribute="top" secondItem="ZTa-fn-9NP" secondAttribute="top" constant="50" id="KoF-i6-4hh"/>
+                                            <constraint firstItem="i9y-FU-xA7" firstAttribute="top" secondItem="NWW-cx-BPH" secondAttribute="bottom" id="Pew-ZM-mw7"/>
+                                            <constraint firstAttribute="trailing" secondItem="i9y-FU-xA7" secondAttribute="trailing" id="T0l-7b-mb1"/>
+                                            <constraint firstAttribute="bottom" secondItem="i9y-FU-xA7" secondAttribute="bottom" id="TQA-Vo-dsa"/>
+                                            <constraint firstAttribute="bottom" secondItem="5L5-N1-KUd" secondAttribute="bottom" id="clD-eo-64N"/>
+                                            <constraint firstItem="NWW-cx-BPH" firstAttribute="bottom" secondItem="5L5-N1-KUd" secondAttribute="top" id="e3c-3F-F2E"/>
+                                            <constraint firstItem="i9y-FU-xA7" firstAttribute="leading" secondItem="ZTa-fn-9NP" secondAttribute="leading" id="gws-ee-XuA"/>
+                                            <constraint firstItem="5L5-N1-KUd" firstAttribute="leading" secondItem="ZTa-fn-9NP" secondAttribute="leading" id="jsM-9G-gqc"/>
+                                            <constraint firstAttribute="trailing" secondItem="5L5-N1-KUd" secondAttribute="trailing" id="qng-f1-Uxu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Ab-MZ-dfV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="0dT-9h-IqY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="brF-xh-3QA" secondAttribute="top" id="8F4-Ss-jg7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="brF-xh-3QA" secondAttribute="trailing" id="ECZ-nK-AJg"/>
+                            <constraint firstItem="4Ab-MZ-dfV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="HYR-9z-u8z"/>
+                            <constraint firstItem="brF-xh-3QA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lgS-2H-Fbk"/>
+                            <constraint firstItem="4Ab-MZ-dfV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xgl-Lo-5pO"/>
+                            <constraint firstItem="brF-xh-3QA" firstAttribute="bottom" secondItem="4Ab-MZ-dfV" secondAttribute="top" id="ztO-If-33B"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems/>
@@ -77,17 +128,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="torsken1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ehk-1w-SWN">
-                                <rect key="frame" x="20" y="230" width="374" height="405"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="torsken1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ehk-1w-SWN">
+                                <rect key="frame" x="20" y="-11" width="374" height="923"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES" playsSound="YES"/>
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sP-a2-eRA">
-                                <rect key="frame" x="20" y="317" width="374" height="235"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Cat To Start Purr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apT-0X-b1x">
+                                <rect key="frame" x="0.0" y="88" width="414" height="55"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="6Cz-q0-2tu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sP-a2-eRA">
+                                <rect key="frame" x="20" y="-11" width="374" height="923"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -97,16 +156,20 @@
                                     <action selector="stopPurring" destination="okh-1q-vNb" eventType="touchUpInside" id="Nn3-fx-6j0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pet Cat To Start Purr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apT-0X-b1x">
-                                <rect key="frame" x="0.0" y="88" width="414" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2sP-a2-eRA" firstAttribute="leading" secondItem="ZS7-Rt-wx0" secondAttribute="leadingMargin" id="2Js-kR-09C"/>
+                            <constraint firstItem="2sP-a2-eRA" firstAttribute="trailing" secondItem="Ehk-1w-SWN" secondAttribute="trailing" id="Jqj-rF-tQn"/>
+                            <constraint firstItem="2sP-a2-eRA" firstAttribute="leading" secondItem="Ehk-1w-SWN" secondAttribute="leading" id="KJb-et-I1V"/>
+                            <constraint firstItem="apT-0X-b1x" firstAttribute="top" secondItem="X8h-04-3hY" secondAttribute="top" id="UxG-Xy-KWB"/>
+                            <constraint firstItem="2sP-a2-eRA" firstAttribute="bottom" secondItem="Ehk-1w-SWN" secondAttribute="bottom" id="hdL-aQ-dGi"/>
+                            <constraint firstItem="apT-0X-b1x" firstAttribute="leading" secondItem="X8h-04-3hY" secondAttribute="leading" id="i27-5W-Vv9"/>
+                            <constraint firstItem="2sP-a2-eRA" firstAttribute="top" secondItem="Ehk-1w-SWN" secondAttribute="top" id="jBx-qM-ySB"/>
+                            <constraint firstItem="2sP-a2-eRA" firstAttribute="trailing" secondItem="ZS7-Rt-wx0" secondAttribute="trailingMargin" id="jjd-bu-4N9"/>
+                            <constraint firstItem="X8h-04-3hY" firstAttribute="trailing" secondItem="apT-0X-b1x" secondAttribute="trailing" id="kew-g0-pXF"/>
+                            <constraint firstItem="2sP-a2-eRA" firstAttribute="centerY" secondItem="X8h-04-3hY" secondAttribute="centerY" id="l5E-f0-Z7C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="X8h-04-3hY"/>
                     </view>
                     <navigationItem key="navigationItem" id="xGj-le-ZfH"/>
@@ -139,7 +202,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ac4-qy-FPw"/>
+        <segue reference="wif-Lh-XOA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="livli" width="501" height="230"/>

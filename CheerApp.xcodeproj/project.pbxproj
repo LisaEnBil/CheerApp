@@ -17,6 +17,7 @@
 		4251773D2473C9220089DA3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4251773C2473C9220089DA3C /* Assets.xcassets */; };
 		425177402473C9220089DA3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4251773E2473C9220089DA3C /* LaunchScreen.storyboard */; };
 		425177552473E28B0089DA3C /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425177542473E28B0089DA3C /* image.xcassets */; };
+		42977D20247AB8BB00A8C3F1 /* PictureButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42977D1F247AB8BB00A8C3F1 /* PictureButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		4251773F2473C9220089DA3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		425177412473C9220089DA3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		425177542473E28B0089DA3C /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		42977D1F247AB8BB00A8C3F1 /* PictureButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				425177412473C9220089DA3C /* Info.plist */,
 				425177542473E28B0089DA3C /* image.xcassets */,
 				422D09232477D51C00F77982 /* CatViewController.swift */,
+				42977D1F247AB8BB00A8C3F1 /* PictureButtons.swift */,
 			);
 			path = CheerApp;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				425177382473C9210089DA3C /* CatChooserController.swift in Sources */,
 				422D09242477D51C00F77982 /* CatViewController.swift in Sources */,
 				425177342473C9210089DA3C /* AppDelegate.swift in Sources */,
+				42977D20247AB8BB00A8C3F1 /* PictureButtons.swift in Sources */,
 				425177362473C9210089DA3C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
