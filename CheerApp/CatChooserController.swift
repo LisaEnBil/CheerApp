@@ -42,15 +42,25 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
         }
     }
     @IBOutlet var imageView: UIImageView!
+    var imageAspectConstraint: NSLayoutConstraint?
+
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         navigationController?.dismiss(animated: true, completion: nil)
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             imageView.image = image
+    
+            let aspectRatio = image.size.width / image.size.height
+            
+            imageAspectConstraint?.isActive = false
+            imageAspectConstraint = imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor, multiplier: aspectRatio)
+            imageAspectConstraint?.isActive = true
         }
         if addedCat.isHidden {
             addedCat.isHidden = false
         }
+        
+        
     }
     
 }
