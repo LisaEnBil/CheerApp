@@ -24,12 +24,9 @@ class CatViewController: UIViewController {
             
             audioPlayer = try AVAudioPlayer(contentsOf: url)
             audioPlayer.numberOfLoops = -1
-
             audioPlayer.prepareToPlay()
-              
         }
         catch {
-            print("Catch")
             print(error)
         }
     }

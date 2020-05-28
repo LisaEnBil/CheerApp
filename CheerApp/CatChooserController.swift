@@ -9,11 +9,10 @@
 import UIKit
 
 class CatChooserController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
-  
+    
     override func viewDidLoad() {
         super.viewDidLoad ()
        
-      
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -24,10 +23,35 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
         if segue.identifier == "livli" {
             catController.cat = "livli"
         }
-        else {
+        else if segue.identifier == "torsken" {
             catController.cat = "torsken"
         }
+    
     }
+    
+    @IBOutlet weak var addedCat: UIView!
+    
+    
+    @IBAction func chooseCatPhoto() {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            picker.sourceType = .photoLibrary
+            navigationController?.present(picker, animated: true, completion: nil)
+            
+        }
+    }
+    @IBOutlet var imageView: UIImageView!
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        navigationController?.dismiss(animated: true, completion: nil)
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            imageView.image = image
+        }
+        if addedCat.isHidden {
+            addedCat.isHidden = false
+        }
+    }
+    
 }
-
 
