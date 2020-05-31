@@ -12,8 +12,8 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad ()
-       
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let catController = segue.destination as! CatViewController
@@ -30,7 +30,6 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
             catController.cat = "chosenCat"
             catController.chosenCat = imageView.image
         }
-    
     }
     
     @IBOutlet weak var addedCat: UIView!
@@ -41,9 +40,9 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
             picker.delegate = self
             picker.sourceType = .photoLibrary
             navigationController?.present(picker, animated: true, completion: nil)
-    
         }
     }
+    
     @IBOutlet var imageView: UIImageView!
     var imageAspectConstraint: NSLayoutConstraint?
  
@@ -62,7 +61,6 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
             addedCat.isHidden = false
         }
         catName()
-        
     }
     
     @IBOutlet var field: UITextField!
@@ -73,7 +71,6 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
         if label.isHidden {
             label.isHidden = true
         }
-      
     }
  
    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
@@ -84,10 +81,10 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
             label.text = field.text
             label.isHidden = false
             field.isHidden = true
+            field.endEditing(true)
          default:
              super.pressesBegan(presses, with: event)
          }
     }
-    
 }
 

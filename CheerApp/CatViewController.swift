@@ -72,5 +72,4 @@ class CatViewController: UIViewController {
         }
     }
     @IBOutlet weak var petCatLabel: UILabel!
-  
 }
