@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CatChooserController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
+class CatChooserController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad ()
@@ -59,9 +59,31 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
         if addedCat.isHidden {
             addedCat.isHidden = false
         }
-        
+        catName()
         
     }
+    
+    @IBOutlet var field: UITextField!
+    @IBOutlet var label: UILabel!
+
+    @IBAction func catName () {
+        label.isHidden = true
+      
+    }
+ 
+   override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+         guard let key = presses.first?.key else { return }
+
+         switch key.keyCode {
+         case .keyboardReturnOrEnter:
+            label.text = field.text
+            label.isHidden = false
+            field.isHidden = true
+         default:
+             super.pressesBegan(presses, with: event)
+         }
+    }
+    
     
 }
 
