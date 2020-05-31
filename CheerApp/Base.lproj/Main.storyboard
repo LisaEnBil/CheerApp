@@ -48,6 +48,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAa-w9-prd">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <segue destination="okh-1q-vNb" kind="show" identifier="chosenCat" id="2Ks-HV-f7H"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y9B-h4-0wq">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
@@ -275,7 +278,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wif-Lh-XOA"/>
+        <segue reference="2Ks-HV-f7H"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="livli" width="501" height="230"/>

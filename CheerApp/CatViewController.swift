@@ -38,22 +38,23 @@ class CatViewController: UIViewController {
     @IBOutlet weak var catImageView: UIImageView!
     
     var cat = "torsken"
+    var chosenCat: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         if cat == "torsken" {
             catImageView.image = UIImage(named: "torsken1")
             prepareForSound(purrFile: "0981")
-            
-            
         }
         else if cat == "livli" {
             catImageView.image = UIImage(named: "livli")
             prepareForSound(purrFile: "1010")
         }
-        
+        else if cat == "chosenCat" {
+            catImageView.image = chosenCat
+        }
+   
     }
     @IBAction func purr() {
         
