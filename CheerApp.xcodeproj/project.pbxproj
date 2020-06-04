@@ -18,6 +18,7 @@
 		425177402473C9220089DA3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4251773E2473C9220089DA3C /* LaunchScreen.storyboard */; };
 		425177552473E28B0089DA3C /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425177542473E28B0089DA3C /* image.xcassets */; };
 		42977D20247AB8BB00A8C3F1 /* PictureButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42977D1F247AB8BB00A8C3F1 /* PictureButtons.swift */; };
+		42ED71A724892793001F4E0A /* 0436.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42ED71A624892793001F4E0A /* 0436.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		425177412473C9220089DA3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		425177542473E28B0089DA3C /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
 		42977D1F247AB8BB00A8C3F1 /* PictureButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureButtons.swift; sourceTree = "<group>"; };
+		42ED71A624892793001F4E0A /* 0436.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 0436.wav; path = ../../0436.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				4251773E2473C9220089DA3C /* LaunchScreen.storyboard */,
 				422D09272479047100F77982 /* 0981.wav */,
 				422D09292479047900F77982 /* 1010.wav */,
+				42ED71A624892793001F4E0A /* 0436.wav */,
 				425177412473C9220089DA3C /* Info.plist */,
 				425177542473E28B0089DA3C /* image.xcassets */,
 				422D09232477D51C00F77982 /* CatViewController.swift */,
@@ -153,6 +156,7 @@
 				425177402473C9220089DA3C /* LaunchScreen.storyboard in Resources */,
 				4251773D2473C9220089DA3C /* Assets.xcassets in Resources */,
 				425177552473E28B0089DA3C /* image.xcassets in Resources */,
+				42ED71A724892793001F4E0A /* 0436.wav in Resources */,
 				422D092A2479047900F77982 /* 1010.wav in Resources */,
 				422D09282479047100F77982 /* 0981.wav in Resources */,
 				4251773B2473C9210089DA3C /* Main.storyboard in Resources */,

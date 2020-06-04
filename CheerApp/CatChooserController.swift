@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import MediaPlayer
 
 class CatChooserController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate, UITextFieldDelegate {
     
+
     override func viewDidLoad() {
         super.viewDidLoad ()
+        removeButton.isHidden = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -29,10 +32,13 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
         else if segue.identifier == "chosenCat" {
             catController.cat = "chosenCat"
             catController.chosenCat = imageView.image
-        }
+        }    
     }
     
     @IBOutlet weak var addedCat: UIView!
+    
+    @IBOutlet weak var addCatButton: UIButton!
+    
 
     @IBAction func chooseCatPhoto() {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
@@ -40,6 +46,7 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
             picker.delegate = self
             picker.sourceType = .photoLibrary
             navigationController?.present(picker, animated: true, completion: nil)
+            
         }
     }
     
@@ -58,6 +65,7 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
             imageAspectConstraint?.isActive = true
         }
         if addedCat.isHidden {
+            addCatButton.isHidden = true
             addedCat.isHidden = false
         }
         catName()
@@ -82,9 +90,27 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
             label.isHidden = false
             field.isHidden = true
             field.endEditing(true)
+            removeButton.isHidden = false
+            
          default:
              super.pressesBegan(presses, with: event)
          }
     }
+    
+    @IBAction func removeCat() {
+          
+        imageView.image = nil
+        label.text = nil
+        label.isHidden = true
+        addedCat.isHidden = true
+        removeButton.isHidden = true
+        addCatButton.isHidden = false
+          
+      }
+    
+    @IBOutlet weak var removeButton: UIButton!
+    
+    
+    
 }
 

@@ -178,18 +178,40 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="CheerApp" id="ua5-Xn-J4M">
-                        <barButtonItem key="rightBarButtonItem" title="Add Cat" id="HgQ-Ta-1b3">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="oSJ-Gr-CGK">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="53m-ZJ-cVD">
+                                <rect key="frame" x="301" y="5.5" width="93" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Remove Cat"/>
+                                <connections>
+                                    <action selector="removeCat" destination="BYZ-38-t0r" eventType="touchUpInside" id="qux-A0-a2o"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Add Cat" style="plain" id="2Ii-Yh-NuF">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2vJ-N9-Zh0">
+                                <rect key="frame" x="201" y="5.5" width="92" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Add Cat"/>
+                                <connections>
+                                    <action selector="chooseCatPhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="FGb-CJ-bkt"/>
+                                </connections>
+                            </button>
                             <connections>
-                                <action selector="chooseCatPhoto" destination="BYZ-38-t0r" id="mUB-gT-V4G"/>
+                                <action selector="chooseCatPhoto" destination="BYZ-38-t0r" id="8Qe-CS-2pb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="addCatButton" destination="2vJ-N9-Zh0" id="Kbs-Y3-Wna"/>
                         <outlet property="addedCat" destination="e0j-dd-a5F" id="mvB-5x-h85"/>
                         <outlet property="field" destination="yVU-Ej-jmn" id="oKG-YE-WTc"/>
                         <outlet property="imageView" destination="Y9B-h4-0wq" id="Fse-p1-PGU"/>
                         <outlet property="label" destination="fGD-Nq-B6w" id="2Ep-tF-kJd"/>
+                        <outlet property="removeButton" destination="53m-ZJ-cVD" id="0e0-Gh-6zz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -278,7 +300,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2Ks-HV-f7H"/>
+        <segue reference="wif-Lh-XOA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="livli" width="501" height="230"/>

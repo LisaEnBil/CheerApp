@@ -12,6 +12,7 @@ import AVFoundation
 class CatViewController: UIViewController {
 
     var audioPlayer: AVAudioPlayer!
+
     
     func prepareForSound(purrFile: String) {
         
@@ -53,6 +54,7 @@ class CatViewController: UIViewController {
         }
         else if cat == "chosenCat" {
             catImageView.image = chosenCat
+            prepareForSound(purrFile: "0436")
         }
    
     }
