@@ -180,7 +180,7 @@
                     <navigationItem key="navigationItem" title="CheerApp" id="ua5-Xn-J4M">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="oSJ-Gr-CGK">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="53m-ZJ-cVD">
-                                <rect key="frame" x="301" y="5.5" width="93" height="33"/>
+                                <rect key="frame" x="20" y="5.5" width="93" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Remove Cat"/>
@@ -191,7 +191,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Cat" style="plain" id="2Ii-Yh-NuF">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2vJ-N9-Zh0">
-                                <rect key="frame" x="201" y="5.5" width="92" height="33"/>
+                                <rect key="frame" x="302" y="5.5" width="92" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Add Cat"/>

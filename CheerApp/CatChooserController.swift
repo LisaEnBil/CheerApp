@@ -15,6 +15,8 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad ()
         removeButton.isHidden = true
+        
+        field.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -32,7 +34,8 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
         else if segue.identifier == "chosenCat" {
             catController.cat = "chosenCat"
             catController.chosenCat = imageView.image
-        }    
+        }
+        
     }
     
     @IBOutlet weak var addedCat: UIView!
@@ -80,22 +83,21 @@ class CatChooserController: UIViewController, UIImagePickerControllerDelegate, U
             label.isHidden = true
         }
     }
- 
-   override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
-         guard let key = presses.first?.key else { return }
-
-         switch key.keyCode {
-         case .keyboardReturnOrEnter:
-            label.text = field.text
-            label.isHidden = false
-            field.isHidden = true
-            field.endEditing(true)
-            removeButton.isHidden = false
-            
-         default:
-             super.pressesBegan(presses, with: event)
-         }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+            print("hello")
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+      
+        field.endEditing(true)
+        label.text = field.text
+        field.isHidden = true
+        label.isHidden = false
+        removeButton.isHidden = false
+        return true
+        
+    }
+
     
     @IBAction func removeCat() {
           
